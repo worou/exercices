@@ -8,12 +8,12 @@ class Employe{
     private $description;
     private $age;
     private $matricule;
-    private static $prime;
+    //private static $prime;
     
 
-    public function __construct($p){
-            self::$prime=$p;
-    }
+    // public function __construct($p){
+    //         self::$prime=$p;
+    // }
     
 
     
@@ -94,7 +94,8 @@ class Employe{
      */ 
     public function setSalaire($salaire)
     {
-        $this->salaire = $salaire * self::$prime + $salaire ;
+        //$this->salaire = $salaire * self::$prime + $salaire ;
+        $this->salaire = $salaire;
         return $this;
     }
 
